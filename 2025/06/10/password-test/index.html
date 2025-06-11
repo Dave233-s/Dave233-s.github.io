@@ -102,6 +102,15 @@
     
 <nav id="article-nav">
   
+    <a href="/2025/06/11/comment-test/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          comment test
+        
+      </div>
+    </a>
+  
   
     <a href="/2025/06/08/test/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
@@ -120,6 +129,24 @@
 
 
 
+
+  <section id="comments">
+    <div id="waline"></div>
+    <script type="module">
+      import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+      init({
+        el: '#waline',
+        serverURL: 'https://waline-comment-black.vercel.app',
+        lang: 'zh-CN',
+        pageview: true,
+        emoji: [
+          'https://unpkg.com/@waline/emojis@1.1.0/weibo',
+          'https://unpkg.com/@waline/emojis@1.1.0/tieba'
+        ]
+      });
+    </script>
+  </section>
 </section>
         
           <aside id="sidebar">
@@ -129,6 +156,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2025/06/11/comment-test/">comment test</a>
+          </li>
         
           <li>
             <a href="/2025/06/10/password-test/">password test</a>

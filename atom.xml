@@ -6,7 +6,7 @@
   <link href="https://dave233-s.github.io/atom.xml" rel="self"/>
   
   <link href="https://dave233-s.github.io/"/>
-  <updated>2025-06-10T09:28:00.652Z</updated>
+  <updated>2025-06-11T09:37:55.351Z</updated>
   <id>https://dave233-s.github.io/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>comment test</title>
+    <link href="https://dave233-s.github.io/2025/06/11/comment-test/"/>
+    <id>https://dave233-s.github.io/2025/06/11/comment-test/</id>
+    <published>2025-06-11T09:37:21.000Z</published>
+    <updated>2025-06-11T09:37:55.351Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;评论测试&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>password test</title>
