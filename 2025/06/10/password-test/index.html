@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="/css/fonts/ChineseMono-normal-normal.min.css">
   <link rel="stylesheet" href="/css/fonts/Chinese-italic-normal.min.css">
   <link rel="stylesheet" href="/css/fonts/Chinese-normal-bold.min.css">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+  />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
@@ -114,6 +118,26 @@
 </article>
 
 
+
+
+
+  <section id="comments">
+    <div id="waline"></div>
+    <script type="module">
+      import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+      init({
+        el: '#waline',
+        serverURL: 'https://waline-comment-5z9ihirki-dave-233s-projects.vercel.app',
+        lang: 'zh-CN',
+        pageview: true,
+        emoji: [
+          'https://unpkg.com/@waline/emojis@1.1.0/weibo',
+          'https://unpkg.com/@waline/emojis@1.1.0/tieba'
+        ]
+      });
+    </script>
+  </section>
 </section>
         
           <aside id="sidebar">
