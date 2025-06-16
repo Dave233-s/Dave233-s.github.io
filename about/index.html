@@ -44,6 +44,8 @@
     
       <a class="main-nav-link" href="/archives">Archives</a>
     
+      <a class="main-nav-link" href="/newmenu">NewMenu</a>
+    
       <a class="main-nav-link" href="/about">About</a>
     
     <div class="main-nav-space-between"></div>
@@ -88,6 +90,28 @@
 </article>
 
 
+
+
+
+  <section id="comments">
+    <p>由于vercel.app域名被墙，可能无法查看和发送评论</p>
+    <hr>
+    <div id="waline"></div>
+    <script type="module">
+      import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+      init({
+        el: '#waline',
+        serverURL: 'https://waline-comment-black.vercel.app',
+        lang: 'zh-CN',
+        pageview: true,
+        emoji: [
+          'https://unpkg.com/@waline/emojis@1.1.0/weibo',
+          'https://unpkg.com/@waline/emojis@1.1.0/tieba'
+        ]
+      });
+    </script>
+  </section>
 </section>
         
           <aside id="sidebar">
@@ -141,6 +165,8 @@
     <a href="/" class="mobile-nav-link">Home</a>
   
     <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/newmenu" class="mobile-nav-link">NewMenu</a>
   
     <a href="/about" class="mobile-nav-link">About</a>
   

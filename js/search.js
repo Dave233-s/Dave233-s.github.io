@@ -37,7 +37,7 @@ var searchFunc = function(path, search_id, content_id) {
             var $resultContent = document.getElementById(content_id);
 
             $input.addEventListener('input', function(){
-                var str='<ul class=\"search-result-list\">';
+                var str='<ul class=\"list-group\">';
                 var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
                 $resultContent.innerHTML = "";
                 if (this.value.trim().length <= 0) {
@@ -79,7 +79,7 @@ var searchFunc = function(path, search_id, content_id) {
                     }
                     // show search results
                     if (isMatch) {
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        str += "<br><li class=\"list-group-item list-group-item-secondary\"><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a><hr>";
                         var content = data.content.trim().replace(/<[^>]+>/g,"");
                         if (first_occur >= 0) {
                             // cut out 100 characters
