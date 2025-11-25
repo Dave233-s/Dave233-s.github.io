@@ -540,9 +540,8 @@
     <hr>
     <div id="waline"></div>
     <script type="module">
-      import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
-
-      init({
+      import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+      window.onload = () => init({
         el: '#waline',
         serverURL: 'https://waline-comment-black.vercel.app',
         lang: 'zh-CN',
@@ -552,6 +551,22 @@
           'https://unpkg.com/@waline/emojis@1.1.0/tieba'
         ]
       });
+    // init({
+    //   el: '#waline',
+    //   serverURL: 'https://waline-comment-black.vercel.app',
+    // });
+      // import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+      // init({
+      //   el: '#waline',
+      //   serverURL: 'https://waline-comment-black.vercel.app',
+      //   lang: 'zh-CN',
+      //   pageview: true,
+      //   emoji: [
+      //     'https://unpkg.com/@waline/emojis@1.1.0/weibo',
+      //     'https://unpkg.com/@waline/emojis@1.1.0/tieba'
+      //   ]
+      // });
     </script>
   </section>
 </section>

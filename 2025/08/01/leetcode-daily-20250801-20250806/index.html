@@ -271,9 +271,8 @@ C_{3}^{0} = 1 &amp; C_{3}^{1} = \frac{3}{1}=3 &amp; C_{3}^{2} = \frac{3 \times 2
     <hr>
     <div id="waline"></div>
     <script type="module">
-      import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
-
-      init({
+      import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+      window.onload = () => init({
         el: '#waline',
         serverURL: 'https://waline-comment-black.vercel.app',
         lang: 'zh-CN',
@@ -283,6 +282,22 @@ C_{3}^{0} = 1 &amp; C_{3}^{1} = \frac{3}{1}=3 &amp; C_{3}^{2} = \frac{3 \times 2
           'https://unpkg.com/@waline/emojis@1.1.0/tieba'
         ]
       });
+    // init({
+    //   el: '#waline',
+    //   serverURL: 'https://waline-comment-black.vercel.app',
+    // });
+      // import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+      // init({
+      //   el: '#waline',
+      //   serverURL: 'https://waline-comment-black.vercel.app',
+      //   lang: 'zh-CN',
+      //   pageview: true,
+      //   emoji: [
+      //     'https://unpkg.com/@waline/emojis@1.1.0/weibo',
+      //     'https://unpkg.com/@waline/emojis@1.1.0/tieba'
+      //   ]
+      // });
     </script>
   </section>
 </section>
