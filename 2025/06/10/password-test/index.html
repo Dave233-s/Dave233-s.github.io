@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><!-- hexo injector head_begin start --><link href="/css/hexo-tag-common.css" rel="stylesheet"/><!-- hexo injector head_begin end -->
   <meta charset="utf-8">
   
   
@@ -29,6 +29,28 @@
     <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css">
   
 
+  
+    <link rel="stylesheet" href="/katex/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="/katex/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="/katex/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+          ],
+          throwOnError : false
+        });
+      });
+    </script>
   
 <meta name="generator" content="Hexo 7.3.0"></head>
 
@@ -88,7 +110,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="b589a8aaf6406a0e29f628bde87df5da716c562e4358a6c103f0a5b917f02b86">13295561a9b05d2864b59fc19a94899eaef4a48a594b3821a5d1ccfb4e91238efa68d94037d26ace6a83133a47943bf8d6d33c1af870213091618ef3ce6bfb079703374fb6ac91eff930ea355f6c5e9d1f34babd38bf121a1aadf89f8681fa0cbbc2d98d6b890f424960c4fa9eb5be620933a81f148d99e1cee81d4e0f305059840f1b6e8d158ca990efcc5c8917cc25503d1a4fa6caf6a18e09d90eba59bbbc6aab37a9df20bde9447299d39fe48a8ae32c9c485f659903bc8f777b0dc41a08d804644862ac6d957b5f4c321122739cd2c9c225bcc62811d3dd419c4b3e4a0c19b744818b8ed20feee79d35ee56f06198a2fa496c87ba50a3864fd30adb012a4b2accc51966612d9e2eb39d630345776d2410a4ee7691326642d27115ad4caf3d8c0d1faa80891d9844ef09114b6e1f0e1a02ad91e1ecb48bbafaaffb6fe4335f3d4862109017198383355c5582aabcd8a047383f37063ed73a3a660214cd720d11ee1987c6b774c9b67a63490c676b4106214e15c8ca720b6b054265c1a9e3291b30dec798233e6626bf9847d3e337e150a5cc0fb560d9910f377b37c2fde4cd6e7b4fecddb94224391df5a210d083eb7859dfe0597f4afe49574b651303f2e21d7a7a9000c72ae445831510031880b613b52732244d53228958575f5305ce8bf569f52568411c7f3bc5c1dbf2203f9d27d6c94742821334372705923c46a1b39281755ca1b8bc173dbf258ff053326f7b0751011c6ddcc9683f19409c40dff173aa9d14b98abd19e6c61a777efa84ab8141682e2f79f3bb4f35d7ce7d6515a9ab3009ab13932e1eaa521feb589e6ef2892976fcca8cc7e35f56e413da502eadec73aea5fca4b188e6f4aa75db5955831256cf658be544019d844fdded6747b35d487e63f8d97228d81eb308e01dbc7d1d5fb02235d66f09e713af071672fa5f330d0330000390ec29ac4078246f9506f39fd7ae7f3384e23fb67057ef66b567a3813737164c2ae212ca7d7889c98287194ea6b28f7a5871d2d073008ca86abce3ac9c006828dc60de73980377a9c5d073d1dcd5d2bbd854a0456f47934b074e5c3b590e91235b223bb098acdd657d14c39cec420631d3dd173e01d1fc2a4ca23f5aa3d2ed4bcea954121b5e22df12c9eae4fef78b1dc3b2b47f801ec3cced11ae811e9cd2a52b316b27e8196d11f4935deca7d933d043e7fde2ff91ce133f2d325d5313d9b433bdf25cb4de6316c5f59d8e758f29602648e6a452ea1b947ae1bbb6909229b597f73c3753331bac1faa8f6ead220e3f907f25ad24be5eeccb5a92af7dcc51a3809b90f72c2f7b003aa9abc20b4c672712699271029c13cfa083e22e2cafb42a8731e04c1445099d3542ac351f40e721b1bc7f6ab55f6dae256efbcec1b76a478fe14ffef1f73ac732515abc4edcbac8c062acec39cdeabb21</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="836f62555761a616a826f5931a6da5dd64abd8183d004554cabbe49f9d85e4c5">13295561a9b05d2864b59fc19a94899ea1464271088358fb708cc35f580c5d6b304ccc07fa77c67a3de3c176cfe357d76f17753f93cc7fd4e1823f1487bd2e1f963622fb19498452f4cf83b92d0d175e6007752bcc437c9addd6daf2a0de6e32b92ebd16e6693fd1e108484c493da04adabe4ac92d41d8b691ba11a6560740f38ee49b219e0dfb42614fe8f9c32cb50d4f06ac24088755e9f5b7e947aa4f5f24effe6137f55ae95dc8a6352c98fe69af9c537678013ccb91f170c6c84bd4978167c741021879dc2dfa03df85a6c6a65abe179834017314a74d96fc295f53f5fc5a3316f629e01c9a0958d9613fa8b13230abc43c42463bdaa9163622ce1d550b6d7e0ad071f392d230fbda3373cfd2e7d40c3493e566d833a92737c8c8a99095760ccd21b974b2cbc71bf1dbcf12aba94bcc5fb9e35d289ed9ba274785b9a0933c016d19d0939ad9eaa40456e049c6207178bbda0813495bd694ecabbc4e206d95e1222a16c089ff489848000463dbbbbbc8d0239eb5b7fbd1af91ee250f98e481310297ef3e6fb0e63879af0f9a03c32908c1dd5d47e5a689342ae20c44032179585c27cd882c612d890fd6502d8cd44a02beebe6437d07145d221da27476de896d2eabfa18da30a1284832241d449845307e0fcc8c74d1521a3aac3082ec16e3a77df3452746938316455a37907cef62d25ff951f7d635e72a682883c7917a5a5dca08435352328540ebb096d534ef223d79c1180574ce705805ee109979495ddc05bed7d04cc97289eaac3a234c5623918ed7bdd0ba9482501b34f386237dc714a6847416c5451189d822d1238ec8fa07e85404131822d2e153efb072b6e50081b1c9c3137eb13ac6f0d2fa367f186ef24be3788e4662f4249b643cff5ac1284a507925b43a6ebdfdb6ac1cd3aac130f7d9f9949c5173602d929de9d8dfae8ac8e3fc81f8b37fbda17fb8adb5f53af41dcdfecd2a271245bc62a5154423a84c708d3c3b36c2536095719e43833eeb63b688ad0b735fbe360fb437c46d15cab58ac7ae8babb1ac86e63e13e46130880326b7aa6170a97a6eccbc0c3a3d3c9c813c00d192a181bb73359e411cb7ed5902a54838bcc2765618c88eed42ac90d863812e1d1e5de136569391c5532739c3e0d9ef9832d06a3b4c37f9def67f692dfa0883b7028fb32d6967ca2a885e3904647a860701501c09e99e5f5619c9a6868a2b770a3c4eea1cb70ea43a3fa655177ebc66fff54a3afe3365898bfcbf5a0042a5f7707b39c8285142a6ffcf660e0e5586392d3db9b0a4ca17a2f227189aff855d30b6816f11af89ebf2fea66d7eb95fe2b76d9db8392d9a9a045735121e118bbb8a18cb9e7238ef6ec618e143012d6eb8b42a06c29faf4d6b5790dc105515f70f6cbd55966e9f8c2f9d0b11bd16d62a260f0820219c6ccce46c45e5ca73552a7e2058f18d8d9dea797746534d33c06d68ff05771b4d0fa4391182deacf6211a30fb7e9265ca50cea72c6a5a86cc8df8268e5ccb90615dd6a1cb226643887bd3b668c8e643a87a2932a1c2d22a8e659ad8f5b33a7b1c41ebad75a04b57cc51c4082ad5aba6f5bd7b99d6f0735af0593cb6342d5bfe4d4059261b9f0c9fbb07</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -169,6 +191,14 @@
       <ul>
         
           <li>
+            <a href="/2025/08/01/leetcode-daily-20250801-20250806/">Leetcode Daily 20250801-20250806</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/30/leetcode-daily-20250725-20250731/">Leetcode Daily 20250725-20250731</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/24/leetcode-daily-20250718-20250724/">Leetcode Daily 20250718-20250724</a>
           </li>
         
@@ -178,10 +208,6 @@
         
           <li>
             <a href="/2025/06/10/password-test/">password test</a>
-          </li>
-        
-          <li>
-            <a href="/2025/06/08/test/">test</a>
           </li>
         
       </ul>
@@ -199,6 +225,14 @@
       <a href="/tags/leetcode/" style="font-size: 10px;">leetcode</a>
     </div>
   </div>
+
+  
+    
+<div id="float-toc">
+    <h2 class="widget-title">目录</h2>
+    
+</div>
+<script src="/js/float-toc.js"></script>
 
   
 </aside>
@@ -245,40 +279,14 @@
 
 
 
-<script>
-  MathJax = {
-    options: {
-      enableMenu: false
-    },
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+
+
+  <script src='https://unpkg.com/mermaid@11.12.1/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest'});
     }
-  };
-</script>
-<!-- <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-    CommonHTML: {
-      linebreaks: false
-    }
-  });
-  </script> -->
-<script type="text/javascript" id="MathJax-script" async
-  src="/mathjax/tex-chtml.js">
-</script>
-
-  
-<script src="/js/search.js"></script>
-
-  
-<link rel="stylesheet" href="/css/search.css">
-
-<script>searchFunc('/search.xml', 'searchInput', 'searchResult');</script>
-<!-- <script>$("#nav-search-btn").bind("click",searchFunc);</script> -->
-<!-- <script type="text/javascript"
-   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML">
-</script> -->
+  </script>
 
 
 
@@ -295,5 +303,5 @@
     </div>
 </div>
 
-</body>
+<!-- hexo injector body_end start --><script src="/js/hexo-tag-common.js"></script><!-- hexo injector body_end end --></body>
 </html>

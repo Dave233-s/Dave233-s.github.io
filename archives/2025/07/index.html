@@ -28,6 +28,28 @@
   
 
   
+    <link rel="stylesheet" href="/katex/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="/katex/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="/katex/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+          ],
+          throwOnError : false
+        });
+      });
+    </script>
+  
 <meta name="generator" content="Hexo 7.3.0"></head>
 
 <body>
@@ -81,6 +103,26 @@
       
   
     <h1 itemprop="name">
+      <a class="archive-article-title" href="/2025/07/30/leetcode-daily-20250725-20250731/">Leetcode Daily 20250725-20250731</a>
+    </h1>
+  
+
+      <div class="archive-article-line"></div>
+      <a href="/2025/07/30/leetcode-daily-20250725-20250731/" class="archive-article-date">
+  <time class="dt-published" datetime="2025-07-30T11:23:17.000Z" itemprop="datePublished">2025-07-30</time>
+</a>
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      
+  
+    <h1 itemprop="name">
       <a class="archive-article-title" href="/2025/07/24/leetcode-daily-20250718-20250724/">Leetcode Daily 20250718-20250724</a>
     </h1>
   
@@ -109,6 +151,14 @@
       <ul>
         
           <li>
+            <a href="/2025/08/01/leetcode-daily-20250801-20250806/">Leetcode Daily 20250801-20250806</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/30/leetcode-daily-20250725-20250731/">Leetcode Daily 20250725-20250731</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/24/leetcode-daily-20250718-20250724/">Leetcode Daily 20250718-20250724</a>
           </li>
         
@@ -118,10 +168,6 @@
         
           <li>
             <a href="/2025/06/10/password-test/">password test</a>
-          </li>
-        
-          <li>
-            <a href="/2025/06/08/test/">test</a>
           </li>
         
       </ul>
@@ -140,6 +186,8 @@
     </div>
   </div>
 
+  
+    
   
 </aside>
         
@@ -185,40 +233,14 @@
 
 
 
-<script>
-  MathJax = {
-    options: {
-      enableMenu: false
-    },
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+
+
+  <script src='https://unpkg.com/mermaid@11.12.1/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest'});
     }
-  };
-</script>
-<!-- <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-    CommonHTML: {
-      linebreaks: false
-    }
-  });
-  </script> -->
-<script type="text/javascript" id="MathJax-script" async
-  src="/mathjax/tex-chtml.js">
-</script>
-
-  
-<script src="/js/search.js"></script>
-
-  
-<link rel="stylesheet" href="/css/search.css">
-
-<script>searchFunc('/search.xml', 'searchInput', 'searchResult');</script>
-<!-- <script>$("#nav-search-btn").bind("click",searchFunc);</script> -->
-<!-- <script type="text/javascript"
-   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML">
-</script> -->
+  </script>
 
 
 

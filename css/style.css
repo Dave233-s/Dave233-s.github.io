@@ -513,6 +513,13 @@ body {
 }
 #content {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  gap: 50px;
 }
 .outer {
   margin: 0 auto;
@@ -812,7 +819,7 @@ a {
   margin: 50px 0;
 }
 .article-inner {
-  overflow: hidden;
+  overflow: visible;
 }
 .article-meta:before,
 .article-meta:after {
@@ -1643,6 +1650,41 @@ pre .hljs-javascript .hljs-function {
 .toc-number {
   padding-right: 3px;
 }
+#float-toc {
+  position: sticky;
+  top: 100px;
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 320px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#float-toc a.active {
+  color: #42b983;
+  font-weight: bold;
+  border-left: 3px solid #42b983;
+  padding-left: 6px;
+}
+#float-toc .toc-item {
+  margin-left: 0;
+  list-style: none;
+}
+#float-toc .toc-child {
+  padding-left: 5px;
+}
+#float-toc ol {
+  display: none;
+}
+#float-toc .toggle-btn {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 0.8em;
+}
 .bd-box .bd-beg > h-inner {
   margin-right: -0.5em;
 }
@@ -1679,7 +1721,6 @@ html {
 }
 @media screen and (min-width: 811px) {
   #sidebar {
-    float: right;
     width: 12em;
   }
 }
