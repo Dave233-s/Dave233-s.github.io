@@ -20,6 +20,8 @@
 
 var searchFunc = function(path, search_id, content_id) {
     'use strict';
+    console.log(path);
+    console.log(search_id);
     $.ajax({
         url: path,
         dataType: "xml",
@@ -37,6 +39,7 @@ var searchFunc = function(path, search_id, content_id) {
             var $resultContent = document.getElementById(content_id);
 
             $input.addEventListener('input', function(){
+                console.log("i am inputing.");
                 var str='<ul class=\"list-group\">';
                 var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
                 $resultContent.innerHTML = "";
